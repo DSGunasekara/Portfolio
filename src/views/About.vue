@@ -15,22 +15,26 @@
             I have experience in frontend technologies such as <RoughNotation
               :is-show="isShow"
               type="box"
+              color="#00BD9D"
           >
             <span> Vue</span>
           </RoughNotation> and <RoughNotation
               :is-show="isShow"
               type="box"
+              color="#00BD9D"
           >
             <span> Angular</span>
           </RoughNotation> <br>
             and I have experience in working with <RoughNotation
               :is-show="isShow"
               type="underline"
+              color="#00BD9D"
           >
             <span> Django</span>
           </RoughNotation> and <RoughNotation
               :is-show="isShow"
               type="underline"
+              color="#00BD9D"
           >
             <span> Android</span>
           </RoughNotation> App Development. <br>
@@ -51,7 +55,7 @@ export default {
   },
   methods:{
     time(){
-      window.setTimeout(this.line, 2000)
+      window.setTimeout(this.line, 1500)
     },
     line(){
      return this.isShow = true
