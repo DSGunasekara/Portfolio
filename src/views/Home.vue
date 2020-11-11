@@ -53,7 +53,7 @@ export default {
           break;
         }
         case 3:{
-          window.location.href = "mailto:adsgunasekara18@gmail.com?subject=Subject&body=message%20goes%20here";
+          window.location.href = "mailto:adsgunasekara18@gmail.com";
         }
       }
     }
