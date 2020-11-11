@@ -76,10 +76,13 @@ export default {
   margin-top: -8rem;
   margin-left: 10rem;
   background-image: url("~@/assets/undraw_web_developer_p3e5.svg");
-  height: 100vh; /* You must set a specified height */
+  height: auto; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  width: auto;
+  width: 100%;
+}
+.container{
+  height: 75vh;
 }
 
 </style>
