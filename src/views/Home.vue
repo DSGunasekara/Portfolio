@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <div class="heading">
-      <h1 style="font-weight: lighter">Hello, </h1>
-      <h1 class="name" style="font-weight: 500">I'm Dilain Gunasekara </h1>
+      <div class="greet">
+        <h1 style="font-weight: lighter">Hello, </h1>
+        <h1 class="name" style="font-weight: 500">I'm Dilain Gunasekara </h1>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-auto">
@@ -22,7 +24,7 @@
               </v-btn>
             </v-speed-dial>
           </div>
-          <div class="col-auto"><v-btn outlined color="#49C6E5">Get CV</v-btn></div>
+          <div class="col-auto"><v-btn outlined color="#49C6E5" @click="getPdf">Get CV</v-btn></div>
         </div>
       </div>
     </div>
@@ -56,6 +58,9 @@ export default {
           window.location.href = "mailto:adsgunasekara18@gmail.com";
         }
       }
+    },
+    getPdf(){
+      window.open('../assets/ADSGunasekara.pdf')
     }
   }
 }
@@ -63,11 +68,15 @@ export default {
 
 <style scoped>
 
+.greet{
+  padding-top: 10rem;
+}
+
 .heading {
-  margin-top: 2rem;
+  margin-top: -8rem;
   margin-left: 10rem;
   background-image: url("~@/assets/undraw_web_developer_p3e5.svg");
-  height: 750px; /* You must set a specified height */
+  height: 100vh; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   width: auto;

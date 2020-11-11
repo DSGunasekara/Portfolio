@@ -55,7 +55,7 @@ name: "Project",
       {
         color: 'teal',
         technology: 'Vue',
-        title: 'Filed Engineer Management System',
+        title: 'Field Engineer Management System',
         description: 'This helps companies deliver effective onsite service\n' +
             'by tracking request, managing personnel, and\n' +
             'maintaining visibility into operations',
