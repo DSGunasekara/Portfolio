@@ -9,9 +9,9 @@ import Project from "@/components/Project";
 
 export default {
   name: "Projects",
-  components:{
+  components: {
     Project
-  }
+  },
 }
 </script>
 

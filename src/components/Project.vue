@@ -28,9 +28,14 @@
             <v-row>
               <div v-for="(item, index) in project.items" :key="index">
                 <v-col cols="1">
-                  <v-avatar size="40">
-                    <v-icon :color="`${item[1]}`">{{ item[0] }}</v-icon>
-                  </v-avatar>
+                  <v-tooltip bottom :color="`${item[1]}`">
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-avatar size="40" v-bind="attrs" v-on="on">
+                        <v-icon :color="`${item[1]}`">{{ item[0] }}</v-icon>
+                      </v-avatar>
+                    </template>
+                    <span>{{ item[2] }}</span>
+                  </v-tooltip>
                 </v-col>
               </div>
             </v-row>
@@ -55,7 +60,7 @@ name: "Project",
             'by tracking request, managing personnel, and\n' +
             'maintaining visibility into operations',
         link: 'https://github.com/DSGunasekara/vue-field-engineer',
-        items: [['mdi-vuejs', 'teal'], ['mdi-language-javascript', '#FFB300']]
+        items: [['mdi-vuejs', 'teal', 'Vuejs'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-javascript', '#FFB300', 'JavaScript']]
       },
       {
         color: 'indigo',
@@ -67,8 +72,8 @@ name: "Project",
             'new training program, publishing announcements\n' +
             'and managing equipment details of the company.\n' +
             'This was created using MEAN stack.',
-        link: 'https://github.com/thushaltk/HRIS-ITP',
-          items: [['mdi-angular', '#E53935'], ['mdi-nodejs', 'green'], ['mdi-language-typescript', 'primary']]
+        link: 'https://github.com/DSGunasekara/HRIS-ITP',
+          items: [['mdi-angular', '#E53935', 'Angular 9'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-typescript', 'primary', 'TypeScript']]
       },
       {
         color: 'green',
@@ -76,8 +81,8 @@ name: "Project",
         title: 'Smoothie Android App',
         description: 'Online Juice ordering platform created with\n' +
             'android and firebase',
-        link: 'https://github.com/thushanK/Smoothie',
-        items: [['mdi-android', 'green'], ['mdi-language-java', '#E53935'], ['mdi-firebase', '#FFB300']]
+        link: 'https://github.com/DSGunasekara/Smoothie',
+        items: [['mdi-android', 'green', 'Android'], ['mdi-language-java', '#E53935', 'Java'], ['mdi-firebase', '#FFB300', 'Firebase']]
       },
       {
         color: 'primary',
@@ -88,7 +93,15 @@ name: "Project",
             'bodies and calculate the density of the\n' +
             'microplastic available in that waterbody using a\n' +
             'Raspberry Pi and Machine learning',
-        items: [['mdi-raspberry-pi', 'deep-purple'], ['mdi-language-python', '#29B6F6']]
+        items: [['mdi-raspberry-pi', 'deep-purple', 'Raspberry Pi'], ['mdi-language-python', 'deep-purple', 'Python with Tensorflow']]
+      },
+      {
+        color: 'teal',
+        technology: 'Django',
+        title: 'A Blog site',
+        description: 'A blog website created with using django and postgresql database',
+        link: 'https://github.com/DSGunasekara/django-wanderer',
+        items: [['mdi-language-python', 'deep-purple', 'Python']]
       },
     ],
   }),
