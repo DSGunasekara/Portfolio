@@ -13,9 +13,9 @@
       <v-btn to="/about" text color="#00BD9D">
         About
       </v-btn>
-      <v-btn to="/contact" text color="#00BD9D">
-        Contact
-      </v-btn>
+<!--      <v-btn to="/contact" text color="#00BD9D">-->
+<!--        Contact-->
+<!--      </v-btn>-->
     </v-toolbar>
   </div>
 </template>
