@@ -26,6 +26,9 @@
           </div>
           <div class="col-auto"><v-btn outlined color="#49C6E5" @click="getPdf">Get CV</v-btn></div>
         </div>
+        <div class="imgContainer">
+          <img src="~@/assets/undraw_web_developer_p3e5.svg" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +75,10 @@ export default {
   padding-top: 10rem;
 }
 
+.imgContainer{
+  display: none;
+}
+
 .heading {
   margin-top: -8rem;
   margin-left: 10rem;
@@ -83,6 +90,58 @@ export default {
 }
 .container{
   height: 75vh;
+}
+
+@media only screen and (max-width: 600px){
+  .heading{
+    background: none;
+    /*background-image: url("~@/assets/undraw_web_developer_p3e5.svg");*/
+    /*background-position: 50% 50%;*/
+    /*background-size: contain;*/
+    margin-left: 1rem;
+    height: auto;
+    width: auto;
+  }
+  .container{
+    /*height: 100vh;*/
+    margin: 0;
+    height: auto;
+
+  }
+  .imgContainer{
+    display: block;
+  }
+  .imgContainer img{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1700px){
+  .heading{
+    background: none;
+    /*background-image: url("~@/assets/undraw_web_developer_p3e5.svg");*/
+    /*background-position: 50% 50%;*/
+    /*background-size: contain;*/
+    margin-left: 1rem;
+    height: auto;
+    width: auto;
+  }
+  .container{
+    /*height: 100vh;*/
+    margin: 0;
+    height: auto;
+
+  }
+  .imgContainer{
+    display: block;
+  }
+  .imgContainer img{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
 }
 
 </style>

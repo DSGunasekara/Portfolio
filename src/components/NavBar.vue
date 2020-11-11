@@ -2,8 +2,6 @@
   <div class="container">
     <v-toolbar flat>
 
-      <v-spacer></v-spacer>
-
       <v-btn to="/" text color="#00BD9D">
         Home
       </v-btn>
