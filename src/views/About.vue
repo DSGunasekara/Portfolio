@@ -5,7 +5,7 @@
         <v-col >
           <img src="~@/assets/undraw_dev_productivity_umsq.svg" alt="">
         </v-col>
-        <v-col class="col-auto">
+        <v-col class="col">
           <h1 style="font-weight: 400">
             Hello
           </h1>
@@ -72,7 +72,7 @@ export default {
 
 <style>
 img{
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 @media only screen and (max-width: 600px){
