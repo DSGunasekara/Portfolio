@@ -24,7 +24,7 @@
               </v-btn>
             </v-speed-dial>
           </div>
-          <div class="col-auto"><v-btn outlined color="#49C6E5" @click="getPdf">Get CV</v-btn></div>
+          <div class="col-auto"><v-btn outlined color="#49C6E5" :href="`${publicPath}ADSGunasekara.pdf`" download="download">Get CV</v-btn></div>
         </div>
         <div class="imgContainer">
           <img src="~@/assets/undraw_web_developer_p3e5.svg" alt="">
@@ -43,7 +43,8 @@ export default {
   },
   data(){
     return{
-      fab: false
+      fab: false,
+      publicPath: process.env.BASE_URL
     }
   },
   methods:{
