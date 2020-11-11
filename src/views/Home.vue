@@ -5,7 +5,23 @@
       <h1 class="name" style="font-weight: 500">I'm Dilain Gunasekara </h1>
       <div class="container">
         <div class="row">
-          <div class="col-auto"><v-btn outlined color="#00BD9D" v-bind="attrs" v-on="on">Contact</v-btn></div>
+          <div class="col-auto">
+<!--            <v-btn outlined color="#00BD9D">Contact</v-btn>-->
+            <v-speed-dial direction="bottom">
+              <template v-slot:activator>
+                  <v-btn text outlined color="#00BD9D">Contact</v-btn>
+              </template>
+              <v-btn dark small color="red" @click="contact(3)">
+                <v-icon>mdi-email</v-icon> E-Mail
+              </v-btn>
+              <v-btn dark small color="black" @click="contact(1)">
+                <v-icon>mdi-github</v-icon> Github
+              </v-btn>
+              <v-btn dark small color="indigo" @click="contact(2)">
+                <v-icon>mdi-linkedin</v-icon> LinkedIn
+              </v-btn>
+            </v-speed-dial>
+          </div>
           <div class="col-auto"><v-btn outlined color="#49C6E5">Get CV</v-btn></div>
         </div>
       </div>
@@ -19,6 +35,24 @@
 export default {
   name: 'Home',
   components: {
+  },
+  data(){
+    return{
+      fab: false
+    }
+  },
+  methods:{
+    contact(id){
+      switch (id){
+        case 1:{
+          window.open('https://github.com/DSGunasekara')
+          break;
+        }
+        case 2:{
+          window.open('https://www.linkedin.com/in/adsgunasekara')
+        }
+      }
+    }
   }
 }
 </script>
