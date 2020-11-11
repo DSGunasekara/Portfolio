@@ -10,7 +10,7 @@
             Hello
           </h1>
           <h2 style="font-weight: 400">
-            I am a student of University of Sri Jayewardenepura and Sri Lanka Institute of Information
+            I am a final year undergraduate of University of Sri Jayewardenepura and second year undergraduate of Sri Lanka Institute of Information
             Technology. <br>
             I have experience in frontend technologies such as <RoughNotation
               :is-show="isShow"
