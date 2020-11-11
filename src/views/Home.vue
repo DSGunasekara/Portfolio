@@ -50,6 +50,10 @@ export default {
         }
         case 2:{
           window.open('https://www.linkedin.com/in/adsgunasekara')
+          break;
+        }
+        case 3:{
+          window.location.href = "mailto:adsgunasekara18@gmail.com?subject=Subject&body=message%20goes%20here";
         }
       }
     }
