@@ -5,7 +5,7 @@
       <h1 class="name" style="font-weight: 500">I'm Dilain Gunasekara </h1>
       <div class="container">
         <div class="row">
-          <div class="col-auto"><v-btn outlined color="#00BD9D">Contact</v-btn></div>
+          <div class="col-auto"><v-btn outlined color="#00BD9D" v-bind="attrs" v-on="on">Contact</v-btn></div>
           <div class="col-auto"><v-btn outlined color="#49C6E5">Get CV</v-btn></div>
         </div>
       </div>

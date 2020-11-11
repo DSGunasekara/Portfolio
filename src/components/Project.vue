@@ -60,7 +60,7 @@ name: "Project",
             'by tracking request, managing personnel, and\n' +
             'maintaining visibility into operations',
         link: 'https://github.com/DSGunasekara/vue-field-engineer',
-        items: [['mdi-vuejs', 'teal', 'Vuejs'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-javascript', '#FFB300', 'JavaScript']]
+        items: [['mdi-vuejs', 'teal', 'Vuejs'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-javascript', '#FFB300', 'JavaScript'], ['mdi-database', 'green', 'MongoDB']]
       },
       {
         color: 'indigo',
@@ -73,7 +73,7 @@ name: "Project",
             'and managing equipment details of the company.\n' +
             'This was created using MEAN stack.',
         link: 'https://github.com/DSGunasekara/HRIS-ITP',
-          items: [['mdi-angular', '#E53935', 'Angular 9'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-typescript', 'primary', 'TypeScript']]
+          items: [['mdi-angular', '#E53935', 'Angular 9'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-typescript', 'primary', 'TypeScript'], ['mdi-database', 'green', 'MongoDB']]
       },
       {
         color: 'green',
@@ -93,15 +93,15 @@ name: "Project",
             'bodies and calculate the density of the\n' +
             'microplastic available in that waterbody using a\n' +
             'Raspberry Pi and Machine learning',
-        items: [['mdi-raspberry-pi', 'deep-purple', 'Raspberry Pi'], ['mdi-language-python', 'deep-purple', 'Python with Tensorflow']]
+        items: [['mdi-raspberry-pi', 'deep-purple', 'Raspberry Pi'], ['mdi-language-python', 'blue-grey', 'Python with Tensorflow']]
       },
       {
-        color: 'teal',
+        color: 'blue-grey',
         technology: 'Django',
         title: 'A Blog site',
         description: 'A blog website created with using django and postgresql database',
         link: 'https://github.com/DSGunasekara/django-wanderer',
-        items: [['mdi-language-python', 'deep-purple', 'Python']]
+        items: [['mdi-language-python', 'blue-grey', 'Python'], ['mdi-database', 'primary', 'PostgreSQL']]
       },
     ],
   }),
