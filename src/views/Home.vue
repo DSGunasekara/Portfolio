@@ -29,7 +29,7 @@ export default {
   margin-top: 2rem;
   margin-left: 10rem;
   background-image: url("~@/assets/undraw_web_developer_p3e5.svg");
-  height: 800px; /* You must set a specified height */
+  height: 750px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   width: auto;

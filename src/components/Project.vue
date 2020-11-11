@@ -48,7 +48,17 @@ name: "Project",
   data: () => ({
     projects: [
       {
-        color: '#E53935',
+        color: 'teal',
+        technology: 'Vue',
+        title: 'Filed Engineer Management System',
+        description: 'This helps companies deliver effective onsite service\n' +
+            'by tracking request, managing personnel, and\n' +
+            'maintaining visibility into operations',
+        link: 'https://github.com/DSGunasekara/vue-field-engineer',
+        items: [['mdi-vuejs', 'teal'], ['mdi-language-javascript', '#FFB300']]
+      },
+      {
+        color: 'indigo',
         technology: 'Angular',
         title: 'Human Resource Information System',
         description: 'This system is capable of managing employee\n' +
@@ -70,17 +80,7 @@ name: "Project",
         items: [['mdi-android', 'green'], ['mdi-language-java', '#E53935'], ['mdi-firebase', '#FFB300']]
       },
       {
-        color: 'cyan',
-        technology: 'Vue',
-        title: 'Filed Engineer Management System',
-        description: 'This helps companies deliver effective onsite service\n' +
-            'by tracking request, managing personnel, and\n' +
-            'maintaining visibility into operations',
-        link: 'https://github.com/DSGunasekara/vue-field-engineer',
-        items: [['mdi-vuejs', 'green'], ['mdi-language-javascript', '#FFB300']]
-      },
-      {
-        color: 'amber',
+        color: 'primary',
         technology: 'Raspberry Pi',
         title: 'IOT based System for Detection and Monitoring\n' +
             'of Microplastic',
@@ -88,7 +88,7 @@ name: "Project",
             'bodies and calculate the density of the\n' +
             'microplastic available in that waterbody using a\n' +
             'Raspberry Pi and Machine learning',
-        items: [['mdi-raspberry-pi', '#E53935'], ['mdi-language-python', '#29B6F6']]
+        items: [['mdi-raspberry-pi', 'deep-purple'], ['mdi-language-python', '#29B6F6']]
       },
     ],
   }),
