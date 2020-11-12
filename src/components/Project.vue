@@ -22,7 +22,8 @@
               {{ project.description}}
             </div>
             <div class="py-4">
-              <v-btn text :class="`${project.color}`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
+              <v-btn v-if="project.link !== '' " text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
+              <v-btn text class="primary" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
             </div>
 
             <v-row>
@@ -51,6 +52,7 @@
 export default {
 name: "Project",
   data: () => ({
+    dialog: false,
     projects: [
       {
         color: 'teal',
@@ -73,7 +75,8 @@ name: "Project",
             'and managing equipment details of the company.\n' +
             'This was created using MEAN stack.',
         link: 'https://github.com/DSGunasekara/HRIS-ITP',
-          items: [['mdi-angular', '#E53935', 'Angular 9'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-typescript', 'primary', 'TypeScript'], ['mdi-database', 'green', 'MongoDB']]
+          items: [['mdi-angular', '#E53935', 'Angular 9'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-typescript', 'primary', 'TypeScript'], ['mdi-database', 'green', 'MongoDB']],
+        youtube: 'https://www.youtube.com/embed/S3vq-il9fIk'
       },
       {
         color: 'green',
@@ -82,7 +85,8 @@ name: "Project",
         description: 'Online Juice ordering platform created with\n' +
             'android and firebase',
         link: 'https://github.com/DSGunasekara/Smoothie',
-        items: [['mdi-android', 'green', 'Android'], ['mdi-language-java', '#E53935', 'Java'], ['mdi-firebase', '#FFB300', 'Firebase']]
+        items: [['mdi-android', 'green', 'Android'], ['mdi-language-java', '#E53935', 'Java'], ['mdi-firebase', '#FFB300', 'Firebase']],
+        youtube: 'https://www.youtube.com/embed/WDYIQAU1gps'
       },
       {
         color: 'primary',
@@ -101,21 +105,25 @@ name: "Project",
         title: 'A Blog site',
         description: 'A blog website created with using django and postgresql database',
         link: 'https://github.com/DSGunasekara/django-wanderer',
-        items: [['mdi-language-python', 'blue-grey', 'Python'], ['mdi-database', 'primary', 'PostgreSQL']]
+        items: [['mdi-language-python', 'blue-grey', 'Python'], ['mdi-database', 'primary', 'PostgreSQL']],
+        youtube: 'https://www.youtube.com/embed/nvxf9SoiNzQ'
       },
     ],
   }),
   methods:{
     github(link){
-      // window.location.href = `https://${link}`
-      // this.$router.navigate(link)
       if(link) window.open(link)
-
-    }
+    },
   }
 }
 </script>
 
 <style scoped>
+@media only screen and (max-width: 600px){
+  embed{
+    width: auto;
+    height: auto;
+  }
+}
 
 </style>
