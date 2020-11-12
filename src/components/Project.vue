@@ -23,7 +23,7 @@
             </div>
             <div class="py-4">
               <v-btn v-if="project.link" text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
-              <v-btn v-if="project.youtube" text class="primary" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
+              <v-btn v-if="project.youtube" text class="primary my-4" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
             </div>
 
             <v-row>
