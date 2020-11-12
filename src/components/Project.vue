@@ -22,8 +22,8 @@
               {{ project.description}}
             </div>
             <div class="py-4">
-              <v-btn v-if="project.link !== '' " text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
-              <v-btn text class="primary" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
+              <v-btn v-if="project.link" text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
+              <v-btn v-if="project.youtube" text class="primary" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
             </div>
 
             <v-row>
@@ -97,6 +97,7 @@ name: "Project",
             'bodies and calculate the density of the\n' +
             'microplastic available in that waterbody using a\n' +
             'Raspberry Pi and Machine learning',
+        link: '',
         items: [['mdi-raspberry-pi', 'deep-purple', 'Raspberry Pi'], ['mdi-language-python', 'blue-grey', 'Python with Tensorflow']]
       },
       {
