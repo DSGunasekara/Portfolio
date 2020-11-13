@@ -119,7 +119,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1700px){
+@media only screen and (max-width: 768px){
   .heading{
     background: none;
     /*background-image: url("~@/assets/undraw_web_developer_p3e5.svg");*/
@@ -144,5 +144,32 @@ export default {
     margin-top: 5rem;
   }
 }
+
+@media only screen and (max-width: 1300px){
+  .heading{
+    background: none;
+    /*background-image: url("~@/assets/undraw_web_developer_p3e5.svg");*/
+    /*background-position: 50% 50%;*/
+    /*background-size: contain;*/
+    margin-left: 1rem;
+    height: auto;
+    width: auto;
+  }
+  .container{
+    /*height: 100vh;*/
+    margin: 0;
+    height: auto;
+
+  }
+  .imgContainer{
+    display: block;
+  }
+  .imgContainer img{
+    width: 90%;
+    height: auto;
+    margin-top: 5rem;
+  }
+}
+
 
 </style>
