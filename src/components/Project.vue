@@ -23,6 +23,9 @@
             </div>
             <div class="py-4">
               <v-btn v-if="project.link" text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
+              <v-btn v-if="project.link1" text :class="`${project.color} mr-2`" dark @click="github(project.link1)"><v-icon>mdi-github</v-icon> View Frontend</v-btn>
+              <v-btn v-if="project.link2" text :class="`${project.color} mr-2`" dark @click="github(project.link2)"><v-icon>mdi-github</v-icon> View Backend</v-btn>
+              <v-btn v-if="project.link3" text :class="`${project.color} mr-2`" dark @click="github(project.link3)"><v-icon>mdi-web</v-icon> View Demo</v-btn>
               <v-btn v-if="project.youtube" text class="primary my-4" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
             </div>
 
@@ -61,7 +64,10 @@ name: "Project",
         description: 'This helps companies deliver effective onsite service\n' +
             'by tracking request, managing personnel, and\n' +
             'maintaining visibility into operations',
-        link: 'https://github.com/DSGunasekara/vue-field-engineer',
+        // link: 'https://github.com/DSGunasekara/vue-field-engineer',
+        link1: 'https://github.com/DSGunasekara/field-engineer-frontend',
+        link2: 'https://github.com/DSGunasekara/field-engineer-backend',
+        link3: 'https://field-engineer-frontend.herokuapp.com/#/landing',
         items: [['mdi-vuejs', 'teal', 'Vuejs'], ['mdi-nodejs', 'green', 'Nodejs'], ['mdi-language-javascript', '#FFB300', 'JavaScript'], ['mdi-database', 'green', 'MongoDB']]
       },
       {
