@@ -23,9 +23,9 @@
             </div>
             <div class="py-4">
               <v-btn v-if="project.link" text :class="`${project.color} mr-2`" dark @click="github(project.link)"><v-icon>mdi-github</v-icon> View Code</v-btn>
-              <v-btn v-if="project.link1" text :class="`${project.color} mr-2`" dark @click="github(project.link1)"><v-icon>mdi-github</v-icon> View Frontend</v-btn>
-              <v-btn v-if="project.link2" text :class="`${project.color} mr-2`" dark @click="github(project.link2)"><v-icon>mdi-github</v-icon> View Backend</v-btn>
-              <v-btn v-if="project.link3" text :class="`${project.color} mr-2`" dark @click="github(project.link3)"><v-icon>mdi-web</v-icon> View Demo</v-btn>
+              <v-btn v-if="project.link1" text :class="`${project.color} mr-2`" dark @click="github(project.link1)"><v-icon>mdi-github</v-icon> Frontend</v-btn>
+              <v-btn v-if="project.link2" text :class="`${project.color} mr-2`" dark @click="github(project.link2)"><v-icon>mdi-github</v-icon>  Backend</v-btn>
+              <v-btn v-if="project.link3" text :class="`${project.color} mr-2`" dark @click="github(project.link3)"><v-icon>mdi-web</v-icon>  Demo</v-btn>
               <v-btn v-if="project.youtube" text class="primary my-4" dark @click="github(project.youtube)"><v-icon>mdi-youtube</v-icon> Video</v-btn>
             </div>
 
